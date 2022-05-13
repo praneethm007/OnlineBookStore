@@ -12,6 +12,7 @@
     margin-right: 30px;
     border-radius: 50px;
     opacity: 0.9;
+    
 }
 .weback{
     font-family: cursive;
@@ -25,3 +26,6 @@
     font-size: 40px;
     color: rgb(0, 0, 0);
 }
+.table > :not(:last-child) > :last-child > * {
+    border-bottom-color: rgb(255, 251, 251);
+  }
