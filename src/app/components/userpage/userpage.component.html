@@ -1,0 +1,44 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container-fluid">
+        <img src="https://thumbs.dreamstime.com/b/dreamstime-template-211205655.jpg" alt="Bookbuy"
+            class="img-responsive">
+        <div class="asdf">
+            <app-search></app-search>
+        </div>
+
+       
+
+    </div>
+
+</nav>
+<table class ="table table-bordered">
+    <thead class="bg-info">
+        <th>Id</th>
+        <th>Book name</th>
+        <th>Book Description </th>
+        <th>Unit price</th>
+        <th>Available Stock</th>
+    </thead>
+    <tr *ngFor="let book of books">
+        <td>{{book.bookId}}</td>
+        <td>{{book.bookName}}</td>
+        <td>{{book.bookDescription}}</td>
+        <td>{{book.unitPrice}}</td>
+        <td>{{book.availableStock}}</td>        
+    </tr>
+</table> -->
+<br><br>
+<div class="row">
+    <div class="col-sm-2" *ngFor="let book of books">
+        <div class="card">
+            <div class="card-body">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81EbEWM54ML.jpg" class="img">
+                <h3 style="text-align: center; font-family: Cursive;">{{book.bookName}}</h3>
+                <h5> Price: {{book.unitPrice |currency:"INR"}}</h5>
+                <h5>{{book.availableStock}}</h5>
+                <button class="btn btn-primary" (click)="addToCart(book.bookId)">Add To Cart</button>
+            </div>
+        </div>        
+    </div>
+</div>
+

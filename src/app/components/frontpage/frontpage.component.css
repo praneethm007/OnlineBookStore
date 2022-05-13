@@ -1,0 +1,67 @@
+.first{
+    width: 100%;
+    height: 100%;
+    /* background-image: url(https://w0.peakpx.com/wallpaper/954/722/HD-wallpaper-still-life-colours-light-autumn-book.jpg); */
+    background-image: url(https://c0.wallpaperflare.com/preview/820/724/843/bench-blur-books-color.jpg);
+    /* background-image: url(https://media.istockphoto.com/photos/closeup-cropped-image-student-girl-hands-typing-using-laptop-picture-id1146488500?k=20&m=1146488500&s=612x612&w=0&h=IewUqjrXCL-Vye7JJk4GLdy1PRbRTRtv3QZf1SqptmM=); */
+    background-size: cover;
+    background-attachment: fixed; 
+    float:right;
+
+}
+.ad{
+    margin-top: 8%;
+    
+}
+.a1{
+    color: rgb(255, 251, 0);
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Lucida Handwriting",cursive;
+    text-align: center;
+}
+h5{
+    /* margin-top: 20%;
+    margin-left: 50%;     */
+    font-size: 60px;
+    /* font-weight: bold; */
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    
+    font-variant-caps: all-petite-caps;
+   
+    color: rgb(246, 246, 247);
+}
+.btn{
+    width: 250px;
+    text-align: left;
+    
+    border-radius: 50px;
+   
+}
+.b12{
+    margin-right: 60px;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    
+}
+.footer-dark{
+    background-color: black;
+    opacity: 0.9;
+
+}
+.fotam{
+    
+    color: aliceblue;
+    font-weight: lighter;
+    font-size: 13px;
+}
+.b11{
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.535);
+    
+    height: 20px;
+    width: 20px;
+}

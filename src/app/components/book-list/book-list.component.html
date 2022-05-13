@@ -1,0 +1,19 @@
+<table class ="table table-bordered bg-light">
+    <thead class="bg-info">
+        <th>Id</th>
+        <th>Book name</th>
+        <th>Book Description </th>
+        <th>Unit price</th>
+        <th>Available Stock</th>
+        <th>Action</th>
+    </thead>
+    <tr *ngFor="let book of books">
+        <td>{{book.bookId}}</td>
+        <td>{{book.bookName}}</td>
+        <td>{{book.bookDescription}}</td>
+        <td>{{book.unitPrice}}</td>
+        <td>{{book.availableStock}}</td>
+        <td><button class="btn btn-info" (click)="update(book)">Update</button>
+            <button class="btn btn-info" (click)="delete(book.bookId)">delete</button></td>        
+    </tr>
+</table>

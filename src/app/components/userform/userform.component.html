@@ -1,0 +1,41 @@
+<div class="as">
+    <h3 style="text-align: center;">Registration form</h3>
+    <form #userform="ngForm" novalidate (ngSubmit)="onSubmit()">
+        <table class="table">
+            <tr>
+                <td>First name :</td>
+                <td><input class="form-control" type="text" name="firstname" [(ngModel)]="user.firstName"
+                        placeholder="Enter First Name"></td>
+            </tr><br>
+            <tr>
+                <td>Last name :</td>
+                <td><input class="form-control" type="text" name="lastName" [(ngModel)]="user.lastName"
+                        placeholder="Enter Last Name"></td>
+            </tr><br>
+            <tr>
+                <td>user name :</td>
+                <td><input class="form-control" type="text" name="bbuserName" [(ngModel)]="user.bbuserName"
+                        placeholder="Enter User Name"></td>
+            </tr><br>
+            <tr>
+                <td>Password :</td>
+                <td><input class="form-control" type="text" name="bbuserPassword" [(ngModel)]="user.bbuserPassword"
+                        placeholder="Enter Password">
+                </td>
+            </tr><br>
+            <tr>
+                <td>Address1 :</td>
+                <td><input type="text" class="form-control" name="bbuserAddress1" [(ngModel)]="user.bbuserAddress1"
+                        placeholder="Enter Address">
+                </td>
+            </tr><br>
+            <tr>
+                <td>Address2 :</td>
+                <td><input type="text" class="form-control" name="bbuserAddress2" [(ngModel)]="user.bbuserAddress2"
+                        placeholder="Enter Address">
+                </td>
+            </tr><br>
+        </table>
+        <button class="btn btn-primary" type="submit">Add Me</button>
+    </form>
+</div>

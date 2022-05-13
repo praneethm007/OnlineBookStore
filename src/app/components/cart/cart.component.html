@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <th>name</th>
+        <th>book Description</th>
+        <th>price</th>
+        <th>action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let book of books">
+            <td>{{book.bookName}}</td>
+            <td>{{book.bookDescription}}</td>
+            <td>{{book.unitPrice}}</td>
+            <td><button class="btn btn-primary"(click)="delete()">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

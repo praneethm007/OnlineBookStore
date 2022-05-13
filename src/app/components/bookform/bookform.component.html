@@ -1,0 +1,34 @@
+<div>
+    <form #bookform="ngForm" novalidate (ngSubmit)="onSubmit()">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td> <input type="text" name="bookName" [(ngModel)]="book.bookName"></td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td><input type="text" name="unitPrice" [(ngModel)]="book.unitPrice"></td>
+            </tr>
+            <tr>
+                <td>Book category:</td>
+                <td>
+                    <select name="bookCategoryId" [(ngModel)]="book.bookCategoryId">
+                        <option value="1">Potery</option>
+                        <option value="2">Drama</option>
+                        <option value="3">Fiction</option>
+                        <option value="4">Horror</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Stock</td>
+                <td><input type="text" name="availableStock" [(ngModel)]="book.availableStock"></td>
+            </tr>
+            <tr>
+                <td>Desctiption</td>
+                <td><input type="text" name="bookDescription" [(ngModel)]="book.bookDescription"></td>
+            </tr>
+        </table>
+        <button class="btn btn-info" type="submit">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,15 @@
+<!-- <div class="container-fluid">
+    <div class="header-wrap">
+        <form class="form-header" #searchform="ngForm" (submit)="search()" method="GET">
+            <input class="au-input au-input-xl" type="text"name="search"
+                placeholder="Search for employee ..."[(ngModel)] = "searchName"/>
+            <button class="au-btn-submit" type="submit">
+                Search
+            </button>
+        </form>
+       
+    </div>
+    <div class="account-wrap"></div>
+</div> -->
+<input class="text" type="text" name="name" placeholder="enter book name" [(ngModel)]="searchName">
+<button class="btn btn-primary" (click)="search()">Search</button>

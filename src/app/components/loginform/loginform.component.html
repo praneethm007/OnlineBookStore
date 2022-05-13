@@ -1,0 +1,42 @@
+<div class="bg">
+    <br>
+    <div class="row">
+        <div class="col-md-6"><br>
+            <h1 class="weback" >Welcome Back    :)</h1>
+            <p class="para"style="margin-left: 25px">Lots of books are waiting for you to look into, Come let's swim into the ocean
+                of books.</p>
+        </div>
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-4">
+            <br><br><br><br><br>
+            <div class="card">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Login</h5><br>
+                    <form #userform="ngForm" novalidate (ngSubmit)="onSubmit()">
+                        <table class="table">
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;UserName&nbsp;</td>
+                                <td><input class="form-control" type="text" name="userName" [(ngModel)]="userName"
+                                        placeholder="Enter Name"></td>
+                            </tr><br>
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;Password&nbsp;</td>
+                                <td><input class="form-control" type="password" name="Password" [(ngModel)]="Password"
+                                        placeholder="Enter Password"></td>
+                            </tr>
+                        </table>                    
+                        <button class="btn btn-primary" type="submit"
+                            style="margin-left: 40%;font-family: cursive;">Login</button><br>
+                    </form>
+                    <hr>
+                    <p style="text-align: center;">New User? <a routerLink="/userform"><i>Register here</i></a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+</div>

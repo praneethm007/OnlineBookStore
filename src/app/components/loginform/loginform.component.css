@@ -1,0 +1,27 @@
+.bg{
+    background-image: url('/assets/images/libraryblurr.jpg');
+    background-size: cover;
+
+}
+.table{
+    width: 350px;
+}
+
+.card{
+    background-color: aliceblue;
+    margin-right: 30px;
+    border-radius: 50px;
+    opacity: 0.9;
+}
+.weback{
+    font-family: cursive;
+    margin-top: 150px;
+    margin-left: 20px;
+    font-size: 70px;
+    color: black;
+}
+.para{
+    font-family: cursive;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
